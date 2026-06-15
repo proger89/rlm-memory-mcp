@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+
+# RLM data (can be committed or ignored per preference)
+# .rlm/
+
+# Project data - user memories (ignore personal projects)
+# projects/
+
+# Personal project data - DO NOT PUSH TO GITHUB
+# Contains personal website memory data
+projects/jumpino_tech/
+
+# Smoke test artifacts
+smoke-test-data/

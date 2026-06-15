@@ -1,0 +1,17 @@
+interface:
+  display_name: "RLM Memory Codex"
+  short_description: "Project memory and semantic file discovery"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/logo.svg"
+  brand_color: "#2563EB"
+  default_prompt: "Use $rlm-memory-codex to index this repo and retrieve the right files before editing."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "rlm-memory"
+      description: "RLM Memory MCP server for project memory and semantic file discovery."
+      transport: "stdio"
+
+policy:
+  allow_implicit_invocation: true

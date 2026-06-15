@@ -1,0 +1,47 @@
+{
+  "name": "rlm-memory-mcp",
+  "version": "1.0.0",
+  "description": "Codex-native RLM Memory MCP plugin with persistent project memory and semantic file discovery.",
+  "author": {
+    "name": "proger89",
+    "url": "https://github.com/proger89"
+  },
+  "homepage": "https://github.com/proger89/rlm-memory-mcp",
+  "repository": "https://github.com/proger89/rlm-memory-mcp",
+  "license": "MIT",
+  "keywords": [
+    "codex",
+    "mcp",
+    "memory",
+    "rlm",
+    "semantic-search",
+    "codebase"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "RLM Memory MCP",
+    "shortDescription": "Persistent project memory and semantic file discovery for Codex.",
+    "longDescription": "RLM Memory MCP gives Codex a project memory layer and semantic file discovery workflow. It stores memories and file maps as JSON, starts with the local Codex CLI provider by default, and includes a skill that teaches Codex when to query memory, verify source files, and store reusable lessons.",
+    "developerName": "proger89",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive",
+      "Tools"
+    ],
+    "websiteURL": "https://github.com/proger89/rlm-memory-mcp",
+    "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
+    "termsOfServiceURL": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+    "defaultPrompt": [
+      "Use $rlm-memory-codex to index this repo.",
+      "Use $rlm-memory-codex before this refactor.",
+      "Store this lesson with $rlm-memory-codex."
+    ],
+    "brandColor": "#2563EB",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "screenshots": []
+  }
+}

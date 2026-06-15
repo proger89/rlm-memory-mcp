@@ -1,0 +1,58 @@
+{
+  "name": "rlm-memory-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server implementing the Recursive Large Model (RLM) architecture - providing AI agents with persistent memory and semantic file discovery",
+  "type": "module",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proger89/rlm-memory-mcp.git"
+  },
+  "bin": {
+    "rlm-mcp": "dist/index.js",
+    "rlm-ui": "dist/ui/server.js"
+  },
+  "scripts": {
+    "start": "node dist/ui/server.js",
+    "dev": "tsx watch src/ui/server.ts",
+    "mcp": "node dist/index.js",
+    "mcp:dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node smoke-test.mjs",
+    "test:plugin": "npm run build && node scripts/plugin-launcher-smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "rlm",
+    "recursive-large-model",
+    "ai-memory",
+    "claude-code",
+    "codex",
+    "gemini-cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.7.9",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.0",
+    "picomatch": "^4.0.4",
+    "uuid": "^14.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.0",
+    "@types/picomatch": "^4.0.3",
+    "rimraf": "^6.0.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

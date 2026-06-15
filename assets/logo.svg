@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="RLM Memory MCP logo">
+  <rect width="240" height="80" rx="18" fill="#0F172A"/>
+  <rect x="20" y="16" width="48" height="48" rx="12" fill="#2563EB"/>
+  <path d="M34 30h20M34 40h20M34 50h12" stroke="#EFF6FF" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="61" cy="57" r="7" fill="#10B981" stroke="#0F172A" stroke-width="3"/>
+  <text x="84" y="37" fill="#F8FAFC" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">RLM Memory</text>
+  <text x="84" y="58" fill="#93C5FD" font-family="Arial, Helvetica, sans-serif" font-size="16">MCP for Codex</text>
+</svg>

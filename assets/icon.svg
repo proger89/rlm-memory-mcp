@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="RLM Memory MCP">
+  <rect width="64" height="64" rx="14" fill="#2563EB"/>
+  <path d="M18 20c0-4.4 3.6-8 8-8h12c4.4 0 8 3.6 8 8v24c0 4.4-3.6 8-8 8H26c-4.4 0-8-3.6-8-8V20Z" fill="#EFF6FF"/>
+  <path d="M25 24h14M25 32h14M25 40h9" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="46" cy="46" r="8" fill="#10B981" stroke="#EFF6FF" stroke-width="4"/>
+</svg>
