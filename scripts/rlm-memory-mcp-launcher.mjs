@@ -36,7 +36,14 @@ if (!existsSync(distIndex)) {
 }
 
 process.env.RLM_DATA_DIR ||= path.join(os.homedir(), ".codex", "rlm-memory-data");
-process.env.LLM_PROVIDER ||= "codex";
+
+// Codex plugin startup should use the local Codex CLI by default. Some host
+// sessions inherit LLM_PROVIDER=none/auto from smoke tests or parent shells;
+// those values would silently disable the AI layer, so normalize them here.
+const requestedProvider = (process.env.LLM_PROVIDER || "").trim().toLowerCase();
+if (!requestedProvider || requestedProvider === "auto" || requestedProvider === "none") {
+  process.env.LLM_PROVIDER = "codex";
+}
 process.env.CODEX_MODEL ||= "gpt-5.5";
 process.env.CODEX_SANDBOX ||= "read-only";
 process.env.CODEX_IGNORE_USER_CONFIG ||= "true";
